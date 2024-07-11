@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.videoContainer{
+ width: 50%;
+}
+
+.image,video {
+  width: 640px;
+  height: 480px;
+}
+
+
+.imageContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.overlayCanvasvideo {
+  position: absolute;
+  /* background-color: red; */
+  top: 80px;
+  left: 5;
+}
+
+.overlayCanvasImage{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imageCanvas {
+  
+  width: 640px;
+  height: 480px;
+  z-index: 1; /* Asegura que el canvas de la imagen esté encima del video */
+}
